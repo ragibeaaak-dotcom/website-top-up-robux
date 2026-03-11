@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+nav ul li:hover {
+    color: #28a745;
+}
+.login-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.login-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.login-form button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.login-form button:hover {
+    background-color: #218838;
+}
+.hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+.content {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.card {
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Styling untuk Bagian Bantuan (Collapsible) */
+.bantuan-section {
+    display: none; /* Tersembunyi secara default */
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bantuan-section.show {
+    display: block; /* Tampilkan ketika class 'show' ditambahkan */
+}
+
+.bantuan-card {
+    padding: 10px;
+}
+
+.bantuan-card ol {
+    padding-left: 20px;
+}
+
+.bantuan-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Styling untuk Bagian Beranda (Collapsible) */
+.beranda-section {
+    display: none; /* Tersembunyi secara default */
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.beranda-section.show {
+    display: block;
+}
+
+.beranda-card {
+    padding: 10px;
+}
+
+.beranda-card .fitur {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.beranda-card ul {
+    padding-left: 20px;
+}
+
+.beranda-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Styling untuk Bagian Top Up (Collapsible) */
+.topup-section {
+    display: none; /* Tersembunyi secara default */
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topup-section.show {
+    display: block;
+}
+
+.topup-card {
+    padding: 10px;
+}
+
+.topup-card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling Iklan/Promo */
+.iklan-banner {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+    animation: pulse 2s infinite;
+}
+
+.iklan-banner h4 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.iklan-banner p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.iklan-banner button {
+    background-color: #fff;
+    color: #ff6b35;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iklan-banner button:hover {
+    transform: scale(1.05);
+}
+
+.iklan-banner-secondary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.iklan-banner-secondary h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.iklan-banner-secondary p {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.iklan-banner-secondary small {
+    color: #ffd700;
+    font-style: italic;
+}
+
+.iklan-testimoni {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 4px solid #28a745;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.iklan-testimoni h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.iklan-testimoni p {
+    margin: 0 0 10px 0;
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+

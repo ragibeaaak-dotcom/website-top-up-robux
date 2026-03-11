@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SRB GM - Top Up Robux</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Golrox</h1>
+        <nav>
+            <ul>
+                <li onclick="toggleBeranda()">Beranda</li>
+                <li onclick="toggleTopUp()">Top Up</li>
+                <li onclick="toggleBantuan()">Bantuan</li>
+            </ul>
+        </nav>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button onclick="login()">Login</button>
+        </div>
+    </header>
+
+    <!-- Bagian Beranda (Collapsible) -->
+    <section class="beranda-section show" id="berandaContent">
+        <div class="beranda-card">
+            <h3>🏠 Selamat Datang di SRB GM</h3>
+            <p>Website resmi untuk top up Robux dengan mudah, cepat, dan terpercaya.</p>
+            
+            <div class="fitur">
+                <h4>✨ Keunggulan Kami:</h4>
+                <ul>
+                    <li>Proses cepat dan otomatis</li>
+                    <li>Harga kompetitif</li>
+                    <li>Customer service 24/7</li>
+                    <li>Berbagai metode pembayaran</li>
+                </ul>
+            </div>
+            
+            <p><strong>Ayo segera top up Robux Anda!</strong></p>
+        </div>
+
+        <!-- Iklan Promo 1 -->
+        <div class="iklan-banner">
+            <div class="iklan-content">
+                <h4>🔥 Promo Spesial!</h4>
+                <p>Diskon 10% untuk pembelian di atas Rp100.000</p>
+                <button onclick="toggleTopUp()">Ambil Promo Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Iklan Promo 2 -->
+        <div class="iklan-banner-secondary">
+            <div class="iklan-content">
+                <h4>🎁 Bonus Terbesar</h4>
+                <p>Beli 5000 Robux Gratis 500 Robux!</p>
+                <small>Berlaku hingga akhir bulan ini</small>
+            </div>
+        </div>
+
+        <!-- Iklan Promo 3 -->
+        <div class="iklan-testimoni">
+            <h4>💬 Apa Kata Pelanggan Kami?</h4>
+            <p>"Process cepat dan aman, recommend banget!" - <strong>Ahmad</strong></p>
+            <p>"CSnya ramah dan sangat helpful" - <strong>Budi</strong></p>
+            <p>"Sudah多次 trust di SRB GM, tidak pernah kecewa" - <strong>Citra</strong></p>
+        </div>
+    </section>
+
+    <!-- Bagian Top Up (Collapsible) -->
+    <section class="topup-section" id="topupContent">
+        <div class="topup-card">
+            <h3>💎 Pilih Paket Robux</h3>
+            <select id="package">
+                <option value="80">800 Robux - Rp10.000</option>
+                <option value="400">4000 Robux - Rp50.000</option>
+                <option value="800">8000 Robux - Rp100.000</option>
+                <option value="1700">17000 Robux - Rp200.000</option>
+            </select>
+            <button onclick="submitOrder()">Beli Sekarang</button>
+            <div class="info" id="info"></div>
+        </div>
+    </section>
+
+    <!-- Bagian Bantuan (Collapsible) -->
+    <section class="bantuan-section" id="bantuanContent">
+        <div class="bantuan-card">
+            <h3>📖 Cara Menggunakan Website SRB GM</h3>
+            <ol>
+                <li>Pilih paket Robux yang diinginkan pada menu "Paket Robux"</li>
+                <li>Klik tombol "Beli Sekarang" untuk memesan</li>
+                <li>Lakukan pembayaran sesuai nominal yang tertera</li>
+                <li>Robux akan dikirimkan ke akun Anda setelah pembayaran dikonfirmasi</li>
+            </ol>
+            <p><strong>Catatan:</strong> Pastikan username Roblox Anda benar!</p>
+        </div>
+    </section>
+
+    <section class="hero">
+        <h2>Top Up Robux dengan Mudah dan Cepat</h2>
+    </section>
+
+    <footer>
+        <p>&copy; SRB GM. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
